@@ -1,12 +1,15 @@
 {
   "name": "@shahrukh-hack/vibe-skills",
   "version": "2.5.0",
-  "description": "Mega-Library of 45 Curated Standard Agent Skills & 10 UI Framework Playbooks compliant with agentskills.io",
+  "description": "Mega-Library of 48 Curated Standard Agent Skills & 10 UI Framework Playbooks compliant with agentskills.io",
   "author": "Yogeshkumar Patel",
   "homepage": "https://github.com/shahrukh-hack/vibe-skills",
   "skills": [
     { "id": "taste-engine", "category": "Design & UI", "description": "Flagship Anti-AI Slop design engine combining 77k+ ⭐ dials and 10 UI framework playbooks." },
     { "id": "ui-ux-pro-max", "category": "Design & UI", "description": "Agency-grade design intelligence database: 8pt spatial grid, 1.250 typography scale, and WCAG AAA math." },
+    { "id": "shopify-storefront-architect", "category": "E-Commerce & Headless", "description": "Shopify GraphQL Storefront API integration, optimistic cart lines, and checkout redirects." },
+    { "id": "instant-product-search-filters", "category": "E-Commerce & Search", "description": "Sub-50ms product search with multi-faceted filtering, price sliders, and swatch facets." },
+    { "id": "cart-checkout-orchestrator", "category": "E-Commerce & Payments", "description": "Persistent cross-device shopping carts (Zustand), slide-over drawers, and Stripe checkout." },
     { "id": "supabase-architect", "category": "Database & Fullstack", "description": "PostgreSQL schemas, Row-Level Security (RLS) policies, and Auth triggers." },
     { "id": "stripe-billing-guard", "category": "Payments & SaaS", "description": "Cryptographically verified Stripe webhook listeners and checkout sessions." },
     { "id": "seo-meta-optimizer", "category": "SEO & Growth", "description": "Dynamic OpenGraph images, sitemaps, robots.txt, and JSON-LD structured schema." },
