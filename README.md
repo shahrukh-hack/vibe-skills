@@ -27,6 +27,7 @@
 - [📦 Complete Roster of 50 Standard Skills](#-complete-roster-of-50-standard-skills)
 - [🤖 Real-World Usage & Prompt Templates](#-real-world-usage--prompt-templates)
 - [🚫 Anti-AI Slop Heuristic Matrix](#-anti-ai-slop-heuristic-matrix)
+- [🙏 Credits, Attributions & Ecosystem References](#-credits-attributions--ecosystem-references)
 - [📁 Repository Blueprint](#-repository-blueprint)
 - [🤝 Part of The Vibe Coder's Power Suite](#-part-of-the-vibe-coders-power-suite)
 - [👤 Author & License](#-author)
@@ -44,7 +45,7 @@ npx vibe-skills list
 # 2. Install the flagship Taste Engine (Includes all 10 UI playbooks & dials)
 npx vibe-skills add taste-engine
 
-# 3. Install Full-Stack & E-Commerce Superpowers
+# 3. Install Full-Stack, Auth & E-Commerce Superpowers
 npx vibe-skills add better-auth-rbac
 npx vibe-skills add shopify-storefront-architect
 npx vibe-skills add cart-checkout-orchestrator
@@ -154,7 +155,7 @@ Inside **`skills/taste-engine/references/`**, AI agents have instant access to 1
 
 ---
 
-### 🧠 3. Memory & Architecture (3 Skills)
+### 🧠 3. Memory & Architecture (4 Skills)
 | Skill ID | Description |
 | :--- | :--- |
 | **`ast-token-optimizer`** | AST symbol tree queries reducing LLM token consumption by 97% vs raw file dumps. |
@@ -252,6 +253,33 @@ Implement:
 
 ---
 
+## 🙏 Credits, Attributions & Ecosystem References
+
+Vibe Skills stands on the shoulders of giants. We gratefully acknowledge the creators, open-source maintainers, and researchers whose foundational work inspired, shaped, and powers these 50 skills:
+
+| Project / Ecosystem | Author / Organization | Stars | Repository & Official Link | Core Attribution & Contribution |
+| :--- | :--- | :---: | :--- | :--- |
+| **`taste-skill`** | **Leonxlnx** | **77.3k+ ⭐** | [`Leonxlnx/taste-skill`](https://github.com/Leonxlnx/taste-skill) | Anti-slop parameter architecture (`DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`), vision-to-code pipelines, and redesign protocols. |
+| **`shadcn/ui`** | **Shadcn** | **80.5k+ ⭐** | [`shadcn-ui/ui`](https://github.com/shadcn-ui/ui) | Headless Radix primitive composition, Slot `asChild` architecture, and the universal `cn()` utility standard. |
+| **`Framer Motion`** | **Motion Division** | **27.4k+ ⭐** | [`motiondivision/motion`](https://github.com/motiondivision/motion) | Mathematical spring physics constants, `layoutId` layout morphing, and gesture animations. |
+| **`Emil Primitives`** | **Emil Kowalski** | **20.1k+ ⭐** | [`emilkowal.ski`](https://emilkowal.ski/) · [`animations.dev`](https://animations.dev) | Tactile hardware button resistance, Vaul velocity-aware bottom sheets, and Sonner physics toast queues. |
+| **`Agent Skills Standard`** | **Anthropic** | **141.0k+ ⭐** | [`agentskills.io`](https://agentskills.io) · [`anthropics/skills`](https://github.com/anthropics/skills) | Open agent skills specification, progressive disclosure format, and YAML `SKILL.md` frontmatter architecture. |
+| **`Origin UI`** | **Origin UI** | **5.2k+ ⭐** | [`originui.com`](https://originui.com/) | Precision input adornments, segmented pill controls, password visibility toggles, and form controls. |
+| **`cmdk`** | **Paco Coursey** | **12.4k+ ⭐** | [`pacocoursey/cmdk`](https://github.com/pacocoursey/cmdk) | Fast in-memory `⌘K` command palette traversal, keyboard trap handlers, and fuzzy search algorithms. |
+| **`Aceternity & Magic UI`** | **Aceternity / Magic UI** | **40.2k+ ⭐** | [`ui.aceternity.com`](https://ui.aceternity.com/) · [`magicui.design`](https://magicui.design/) | GPU-accelerated radial spotlight cards, moving border beams, and seamless infinite marquee ribbons. |
+| **`Lenis Scroll`** | **Darkroom Engineering** | **13.5k+ ⭐** | [`darkroomengineering/lenis`](https://github.com/darkroomengineering/lenis) | Non-destructive inertia momentum smooth scroll engine and `requestAnimationFrame` integration. |
+| **`Lucide Icons`** | **Lucide Contributors** | **17.8k+ ⭐** | [`lucide.dev`](https://lucide.dev/) | 24x24 SVG geometric coordinate system, stroke-width hierarchy scales, and accessible semantic icon rules. |
+| **`UI UX Pro Max`** | **NextLevelBuilder** | **5.4k+ ⭐** | [`nextlevelbuilder/ui-ux-pro-max-skill`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 8pt spatial layout grid mathematics, 1.250 Major Third typography scale, and WCAG AAA contrast formulas. |
+| **`Awesome Cursorrules`** | **PatrickJS** | **25.2k+ ⭐** | [`PatrickJS/awesome-cursorrules`](https://github.com/PatrickJS/awesome-cursorrules) | Calibrated AI coding rules, system prompt guardrails, and developer IDE conventions. |
+| **`21st.dev`** | **21st.dev Team** | **5.1k+ ⭐** | [`21st.dev`](https://21st.dev/) | Open copy-paste component registry architecture and self-contained TypeScript component standards. |
+| **`Better Auth`** | **Better Auth Team** | **25.3k+ ⭐** | [`better-auth.com`](https://www.better-auth.com/) | Modern type-safe authentication, Passkeys/WebAuthn, OAuth2, and organization RBAC. |
+| **`Expo & React Native`** | **Expo Team** | **40.1k+ ⭐** | [`expo.dev`](https://expo.dev/) | Universal cross-platform mobile architecture and Expo Router file-based navigation. |
+| **`Supabase`** | **Supabase Team** | **75.4k+ ⭐** | [`supabase.com`](https://supabase.com/) | Open-source PostgreSQL database architectures, Row-Level Security (RLS), and Auth triggers. |
+| **`Shopify Storefront`** | **Shopify & Hydrogen** | **15.2k+ ⭐** | [`shopify.dev`](https://shopify.dev/docs/storefronts/headless) | GraphQL Storefront API schemas, cart mutations, and headless checkout redirect flows. |
+| **`Zod & TanStack Query`** | **Colin McDonnell / Tanner Linsley** | **72.6k+ ⭐** | [`zod.dev`](https://zod.dev/) · [`tanstack.com/query`](https://tanstack.com/query) | Runtime type safety, schema validation, and server-state caching with optimistic mutations. |
+
+---
+
 ## 📁 Repository Blueprint
 
 ```
@@ -274,15 +302,15 @@ vibe-skills/
     │       ├── 8-lucide-icons.md
     │       ├── 9-ui-ux-pro-max.md
     │       └── 10-21st-dev-and-cursorrules.md
-    ├── shopify-storefront-architect/
-    │   └── SKILL.md
     ├── better-auth-rbac/
     │   └── SKILL.md
     ├── expo-react-native-architect/
     │   └── SKILL.md
-    ├── cart-checkout-orchestrator/
+    ├── shopify-storefront-architect/
     │   └── SKILL.md
     ├── instant-product-search-filters/
+    │   └── SKILL.md
+    ├── cart-checkout-orchestrator/
     │   └── SKILL.md
     ├── supabase-architect/
     │   └── SKILL.md
