@@ -1,14 +1,15 @@
 # 2. Framer Motion & Spring Physics Playbook (27k+ ⭐)
 
-> **Core Philosophy**: *Physics over linear curves. In the real world, physical objects have mass, momentum, and damping. Web interfaces must feel tactile and human.*
+> **Core Philosophy**: *Physics over linear curves. In the real physical universe, mass, momentum, velocity, and damping govern motion. Web interfaces should feel physical, weighted, and responsive.*
 
 ---
 
-## ⚡ 1. The Mathematical Spring Constant System
+## ⚡ 1. The Mathematical Spring Constant Dictionary
 
 Never use `transition: all 0.3s ease` or standard CSS cubic-bezier curves for interactive micro-animations. Use calibrated spring physics:
 
 ```ts
+// src/lib/motion-presets.ts
 export const SPRING_PRESETS = {
   // Snappy, tactile response for buttons, toggles, and switches
   snappy: { type: 'spring', stiffness: 500, damping: 30, mass: 0.5 },
@@ -19,7 +20,7 @@ export const SPRING_PRESETS = {
   // Gentle, floating curve for tooltips, toasts, and ambient reveals
   gentle: { type: 'spring', stiffness: 260, damping: 22, mass: 0.8 },
   
-  // High-inertia bouncy curve for badges and celebration micro-interactions
+  // High-inertia bouncy curve for celebration micro-interactions and badges
   bouncy: { type: 'spring', stiffness: 450, damping: 15, mass: 0.7 },
 } as const;
 ```
@@ -28,7 +29,7 @@ export const SPRING_PRESETS = {
 
 ## 🔄 2. Shared Layout Morphing (`layoutId`)
 
-Use `layoutId` to morph elements seamlessly across different states (e.g., active navigation pills, tab indicator sliders):
+Use `layoutId` to morph elements seamlessly across states (e.g. active navigation pills, tab indicator sliders):
 
 ```tsx
 import React, { useState } from 'react';
@@ -51,7 +52,7 @@ export const SlidingPillTabs: React.FC<{ tabs: TabItem[] }> = ({ tabs }) => {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className="relative px-4 py-1.5 text-xs font-medium transition-colors"
+            className="relative px-4 py-1.5 text-xs font-medium transition-colors cursor-pointer"
           >
             {isActive && (
               <motion.div
@@ -73,9 +74,57 @@ export const SlidingPillTabs: React.FC<{ tabs: TabItem[] }> = ({ tabs }) => {
 
 ---
 
-## 🎴 3. Staggered Container & Child Reveal Variants
+## 🧲 3. Motion Values: Magnetic Cursor Pull
 
-When revealing lists, cards, or dashboards, stagger entries to create visual rhythm:
+Use `useMotionValue` and `useSpring` to create interactive magnetic buttons that pull towards the cursor:
+
+```tsx
+import React, { useRef } from 'react';
+import { motion, useMotionValue, useSpring } from 'framer-motion';
+
+export const MagneticWrapper: React.FC<{ children: React.ReactNode; strength?: number }> = ({
+  children,
+  strength = 0.25,
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const springConfig = { damping: 20, stiffness: 300, mass: 0.5 };
+  const springX = useSpring(x, springConfig);
+  const springY = useSpring(y, springConfig);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!ref.current) return;
+    const { clientX, clientY } = e;
+    const { left, top, width, height } = ref.current.getBoundingClientRect();
+    const centerX = left + width / 2;
+    const centerY = top + height / 2;
+    x.set((clientX - centerX) * strength);
+    y.set((clientY - centerY) * strength);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  return (
+    <motion.div
+      ref={ref}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{ x: springX, y: springY }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+```
+
+---
+
+## 🎴 4. Staggered Container & Child Reveal Variants
 
 ```tsx
 import { motion } from 'framer-motion';

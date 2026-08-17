@@ -64,19 +64,34 @@ export const SpotlightCard: React.FC<{
 
 Use CSS transforms with hardware GPU acceleration to render infinite partner badges or metric counters:
 
-```css
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
+```tsx
+import React from 'react';
 
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 25s linear infinite;
-}
+export const InfiniteMarquee: React.FC<{ items: string[] }> = ({ items }) => {
+  return (
+    <div className="relative w-full overflow-hidden border-y border-border/60 py-3 bg-muted/20">
+      {/* Left/Right Gradient Fades */}
+      <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
 
-.animate-marquee:hover {
-  animation-play-state: paused;
-}
+      <div className="flex w-max animate-marquee gap-8">
+        {[...items, ...items].map((item, idx) => (
+          <span
+            key={idx}
+            className="text-xs font-mono font-medium text-muted-foreground uppercase tracking-widest flex items-center gap-3"
+          >
+            <span>{item}</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-primary/40" />
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
 ```
+
+---
+
+## 🌟 3. Moving Border Beam Glow
+
+Animate an SVG path offset along the card perimeter to highlight key enterprise pricing cards.

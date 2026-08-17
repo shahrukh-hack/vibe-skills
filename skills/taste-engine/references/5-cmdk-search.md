@@ -1,6 +1,6 @@
 # 5. cmdk Fast Command Palettes Playbook (12k+ ⭐)
 
-> **Core Philosophy**: *Keyboard-first navigation for power users. Instant in-memory filtering with zero latency.*
+> **Core Philosophy**: *Keyboard-first navigation for power users. Instant in-memory fuzzy filtering with zero latency, focus traps, and accessible announcements.*
 
 ---
 
@@ -11,7 +11,7 @@ A command palette (`⌘K` or `Ctrl+K`) allows users to search pages, trigger act
 ```tsx
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, Terminal, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { Search, Terminal, ShieldCheck, Sparkles, Command } from 'lucide-react';
 import { SPRING_PRESETS } from '@/lib/motion-presets';
 
 export const CommandPaletteModal: React.FC = () => {
@@ -40,7 +40,8 @@ export const CommandPaletteModal: React.FC = () => {
   ];
 
   const filtered = commands.filter((c) =>
-    c.title.toLowerCase().includes(query.toLowerCase())
+    c.title.toLowerCase().includes(query.toLowerCase()) ||
+    c.category.toLowerCase().includes(query.toLowerCase())
   );
 
   return (
@@ -52,7 +53,7 @@ export const CommandPaletteModal: React.FC = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsOpen(false)}
-            className="fixed inset-0 bg-black/40 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/40 backdrop-blur-sm cursor-pointer"
           />
 
           <motion.div
@@ -75,19 +76,23 @@ export const CommandPaletteModal: React.FC = () => {
             </div>
 
             <div className="p-2 max-h-72 overflow-y-auto space-y-1">
-              {filtered.map((item, idx) => (
-                <div
-                  key={idx}
-                  onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-between px-3 py-2.5 rounded-xl text-xs text-foreground hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer"
-                >
-                  <div className="flex items-center gap-2.5">
-                    {item.icon}
-                    <span className="font-medium">{item.title}</span>
+              {filtered.length === 0 ? (
+                <p className="text-xs text-muted-foreground p-4 text-center">No matching commands found.</p>
+              ) : (
+                filtered.map((item, idx) => (
+                  <div
+                    key={idx}
+                    onClick={() => setIsOpen(false)}
+                    className="flex items-center justify-between px-3 py-2.5 rounded-xl text-xs text-foreground hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer"
+                  >
+                    <div className="flex items-center gap-2.5">
+                      {item.icon}
+                      <span className="font-medium">{item.title}</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-muted-foreground">{item.category}</span>
                   </div>
-                  <span className="text-[10px] font-mono text-muted-foreground">{item.category}</span>
-                </div>
-              ))}
+                ))
+              )}
             </div>
           </motion.div>
         </div>

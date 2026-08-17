@@ -6,8 +6,8 @@
 
 ## 🔌 1. 21st.dev Component Integration Standard
 
-Components must be 100% self-contained and copy-pasteable:
-1. **Zero Monolithic Hidden Dependencies**: All helper utilities (`cn`, `SPRING_PRESETS`) must be explicitly imported from standardized paths (`@/lib/utils`, `@/lib/motion-presets`).
+Components must be 100% self-contained, typed, and copy-pasteable:
+1. **Explicit Utility Imports**: Import `cn` from `@/lib/utils` and `SPRING_PRESETS` from `@/lib/motion-presets`.
 2. **Strict TypeScript Typing**: Every component must export typed interfaces for all props.
 3. **No Lazy Placeholders**: Never leave `// TODO` comments in production code.
 

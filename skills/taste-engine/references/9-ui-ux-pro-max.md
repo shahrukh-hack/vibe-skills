@@ -1,6 +1,6 @@
 # 9. UI UX Pro Max Mathematical Design Systems Playbook (5k+ ⭐)
 
-> **Core Philosophy**: *Mathematical rigor over arbitrary guesswork. Spatial grids, modular typographic scales, and WCAG AAA contrast formulas.*
+> **Core Philosophy**: *Mathematical rigor over arbitrary guesswork. 8pt spatial grids, modular typographic scales, and WCAG AAA contrast formulas.*
 
 ---
 
@@ -10,8 +10,8 @@ All padding, margins, line-heights, and component dimensions must be multiples o
 
 ```
 Base Unit = 4px
-8px  (0.5rem / gap-2)  -> Icon gaps, badge padding
-16px (1.0rem / gap-4)  -> Standard card interior padding, input spacing
+8px  (0.5rem / gap-2)  -> Icon gaps, badge interior padding
+16px (1.0rem / gap-4)  -> Standard card interior padding, form input spacing
 24px (1.5rem / gap-6)  -> Grid gaps between sibling cards
 32px (2.0rem / gap-8)  -> Section headers to card grids
 64px (4.0rem / py-16)  -> Standard desktop section vertical padding
