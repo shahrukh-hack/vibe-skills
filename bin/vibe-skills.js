@@ -6,7 +6,7 @@ const path = require('path');
 const command = process.argv[2] || 'help';
 const skillName = process.argv[3];
 
-console.log(`\x1b[35m⚡ Vibe Skills CLI v1.3.0 — Mega-Library of 23 Standard Agent Skills\x1b[0m\n`);
+console.log(`\x1b[35m⚡ Vibe Skills CLI v2.5.0 — Mega-Library of 50 Standard Agent Skills\x1b[0m\n`);
 
 const skillsDir = path.join(__dirname, '..', 'skills');
 
