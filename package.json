@@ -1,0 +1,23 @@
+{
+  "name": "vibe-skills",
+  "version": "1.3.0",
+  "description": "Mega-Library of 23 Standard Agent Skills compliant with agentskills.io",
+  "main": "index.js",
+  "bin": {
+    "vibe-skills": "./bin/vibe-skills.js"
+  },
+  "scripts": {
+    "test": "node bin/vibe-skills.js list"
+  },
+  "keywords": [
+    "agentskills",
+    "antigravity",
+    "ai-agents",
+    "cursor",
+    "claude-code",
+    "vibe-coding",
+    "skills"
+  ],
+  "author": "Yogeshkumar Patel",
+  "license": "MIT"
+}

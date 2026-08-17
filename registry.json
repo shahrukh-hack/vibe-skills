@@ -1,0 +1,32 @@
+{
+  "name": "@shahrukh-hack/vibe-skills",
+  "version": "1.3.0",
+  "description": "Mega-Library of 23 Curated Standard Agent Skills compliant with agentskills.io",
+  "author": "Yogeshkumar Patel",
+  "homepage": "https://github.com/shahrukh-hack/vibe-skills",
+  "skills": [
+    { "id": "taste-engine", "category": "Design & UI", "description": "Anti-AI Slop & Emil Kowalski spring physics engine." },
+    { "id": "ui-ux-pro-max", "category": "Design & UI", "description": "Accessible Radix primitives, typography pairings, and layout tokens." },
+    { "id": "code-review", "category": "Engineering", "description": "4-phase code review across 20+ languages with 30 reference guides." },
+    { "id": "ast-token-optimizer", "category": "Memory & AST", "description": "AST progressive disclosure reducing LLM token consumption by 97%." },
+    { "id": "agent-memory-sync", "category": "Memory & AST", "description": "Cross-agent handoff sync between Antigravity, Cursor, and Claude." },
+    { "id": "enterprise-erp-sync", "category": "Operations & ERP", "description": "MYOB Cloud ERP REST API sync with OAuth2 token rotation." },
+    { "id": "browser-automation-scraper", "category": "Automation & Scraping", "description": "Playwright & Puppeteer headless scraper for SPAs and price tracking." },
+    { "id": "owasp-security-sentinel", "category": "Security & QA", "description": "OWASP Top 10 vulnerability and secret leak auditor." },
+    { "id": "nextjs-app-router-guard", "category": "Fullstack Engineering", "description": "React 19 Server Action validator and cache invalidation audit." },
+    { "id": "database-migration-verifier", "category": "Database & DevOps", "description": "Zero-downtime schema migration checker for PostgreSQL and SQLite." },
+    { "id": "agency-messaging", "category": "Multi-Agent Orchestration", "description": "JSON-RPC inter-agent message queuing protocol." },
+    { "id": "task-management", "category": "Multi-Agent Orchestration", "description": "Autonomous task assignment, priority scoring, and state tracking." },
+    { "id": "agencycli-usage", "category": "Multi-Agent Orchestration", "description": "CLI automation guidelines for multi-agent teams." },
+    { "id": "clarify-confirm-continue", "category": "Productivity", "description": "3-phase alignment protocol to eliminate AI assumptions." },
+    { "id": "anti-slop-pr-audit", "category": "Engineering & Review", "description": "Static pull request reviewer catching AI boilerplate." },
+    { "id": "github-pr-triage", "category": "Productivity", "description": "Automated PR triage and semantic categorization." },
+    { "id": "pr-loop", "category": "Productivity", "description": "Continuous automated PR refinement and test runner loop." },
+    { "id": "deslop-duplication-audit", "category": "Engineering & Review", "description": "Audit tool detecting AI-duplicated utility functions." },
+    { "id": "distilling-strategies-interactively", "category": "Productivity", "description": "Interactive requirement clarification protocol." },
+    { "id": "sidequest", "category": "Productivity", "description": "Isolated branching for exploratory side features." },
+    { "id": "new-worktree", "category": "Productivity", "description": "Git worktree isolation manager for concurrent agent tasks." },
+    { "id": "sem-semantic-diff", "category": "Engineering & Review", "description": "AST-aware semantic diff viewer for clean reviews." },
+    { "id": "quick-question", "category": "Productivity", "description": "Fast context lookup for lightweight inquiries." }
+  ]
+}
