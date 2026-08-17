@@ -1,7 +1,7 @@
 <div align="center">
 
 # ⚡ Vibe Skills (v2.5)
-### Mega-Library of 23 Standard Agent Skills & Anti-AI Slop Playbooks
+### The Definitive Mega-Library of 50 Standard Agent Skills & Anti-AI Slop Playbooks
 
 [![Author](https://img.shields.io/badge/Author-@shahrukh--hack-181717?style=flat-square&logo=github)](https://github.com/shahrukh-hack)
 [![Version](https://img.shields.io/badge/Version-v2.5.0-635BFF?style=flat-square)](package.json)
@@ -12,8 +12,8 @@
 
 <br />
 
-> **The definitive skill ecosystem for AI coding agents.**  
-> Equips **Antigravity**, **Cursor**, **Claude Code**, **Codex**, and **Windsurf** with 77k+ ⭐ taste dials, 10 UI framework playbooks, 20+ language code reviews, OWASP security sentinels, AST memory optimizers, and autonomous Playwright web scrapers.
+> **The ultimate skill ecosystem for AI coding agents.**  
+> Equips **Antigravity**, **Cursor**, **Claude Code**, **Codex**, and **Windsurf** with 77k+ ⭐ taste dials, 10 UI framework playbooks, 20+ language code reviews, OWASP security sentinels, Supabase RLS, Stripe billing, Shopify headless e-commerce, Better Auth, Expo React Native, and autonomous web scrapers.
 
 </div>
 
@@ -24,7 +24,7 @@
 - [⚡ 1-Command CLI Installation](#-1-command-cli-installation)
 - [🎛️ The 1–10 Taste Dials (Leonxlnx Architecture)](#️-the-110-taste-dials-leonxlnx-architecture)
 - [🎨 10 Bundled UI/UX Framework Playbooks](#-10-bundled-uiux-framework-playbooks)
-- [📦 Complete Roster of 23 Standard Skills](#-complete-roster-of-23-standard-skills)
+- [📦 Complete Roster of 50 Standard Skills](#-complete-roster-of-50-standard-skills)
 - [🤖 Real-World Usage & Prompt Templates](#-real-world-usage--prompt-templates)
 - [🚫 Anti-AI Slop Heuristic Matrix](#-anti-ai-slop-heuristic-matrix)
 - [📁 Repository Blueprint](#-repository-blueprint)
@@ -35,24 +35,27 @@
 
 ## ⚡ 1-Command CLI Installation
 
-Install any skill directly into your workspace's `.antigravity/skills/` or `.cursor/skills/` directory with zero manual configuration:
+Install any of the 50 skills directly into your workspace's `.antigravity/skills/` or `.cursor/skills/` directory with zero manual configuration:
 
 ```bash
-# 1. List all 23 available skills
+# 1. List all 50 available skills
 npx vibe-skills list
 
 # 2. Install the flagship Taste Engine (Includes all 10 UI playbooks & dials)
 npx vibe-skills add taste-engine
 
-# 3. Install other enterprise skills
-npx vibe-skills add code-review
+# 3. Install Full-Stack & E-Commerce Superpowers
+npx vibe-skills add better-auth-rbac
+npx vibe-skills add shopify-storefront-architect
+npx vibe-skills add cart-checkout-orchestrator
+npx vibe-skills add supabase-architect
+npx vibe-skills add stripe-billing-guard
+npx vibe-skills add expo-react-native-architect
 npx vibe-skills add browser-automation-scraper
-npx vibe-skills add owasp-security-sentinel
-npx vibe-skills add nextjs-app-router-guard
-npx vibe-skills add database-migration-verifier
+npx vibe-skills add code-review
 ```
 
-*(Alternatively, you can use the universal [agentskills.io](https://agentskills.io) standard: `npx skills add https://github.com/shahrukh-hack/vibe-skills --skill taste-engine`)*
+*(Universal [agentskills.io](https://agentskills.io) standard compatible: `npx skills add https://github.com/shahrukh-hack/vibe-skills --skill <skill-name>`)*
 
 ---
 
@@ -71,7 +74,7 @@ VISUAL_DENSITY = 6
 * **`1 – 3` (Minimal & Safe):** Centered single-column layouts, strict Swiss grid, monochrome typography. Ideal for documentation and technical blogs.
 * **`4 – 6` (Modern Clean SaaS):** Linear / Tailwind UI structure, balanced two-column hero, card bento with subtle 1px borders.
 * **`7 – 8` (Stripe Press & Editorial):** Asymmetric magazine layouts, Fraunces serif accent typography, custom paper noise grain textures.
-* **`9 – 10` (Avant-Garde & Experimental):** Dynamic viewport morphing, non-traditional typography scales, interactive full-screen canvas experiences.
+* **`9 – 10` (Avant-Garde & Experimental):** Dynamic viewport morphing, non-traditional typography scales, interactive canvas experiences.
 
 ### 2. `MOTION_INTENSITY` (1 to 10)
 * **`1 – 3` (Static & Fast):** Zero animations, instant state changes, pure CSS hover color transitions.
@@ -93,10 +96,10 @@ Inside **`skills/taste-engine/references/`**, AI agents have instant access to 1
 
 | Playbook | Framework | Community Stars | What It Equips Your AI Agent With |
 | :--- | :--- | :---: | :--- |
-| **[`1-shadcn-ui.md`](skills/taste-engine/references/1-shadcn-ui.md)** | **Shadcn UI** | **80k+ ⭐** | Accessible compound Radix primitives, keyboard focus rings, and `cn()` utility conventions. |
-| **[`2-framer-motion.md`](skills/taste-engine/references/2-framer-motion.md)** | **Framer Motion** | **27k+ ⭐** | 420Hz spring physics constants (`stiffness: 420, damping: 30`) and `layoutId` layout morphing. |
+| **[`1-shadcn-ui.md`](skills/taste-engine/references/1-shadcn-ui.md)** | **Shadcn UI** | **80k+ ⭐** | Accessible compound Radix primitives, keyboard focus rings, Slot `asChild` composition, and `cn()` utility conventions. |
+| **[`2-framer-motion.md`](skills/taste-engine/references/2-framer-motion.md)** | **Framer Motion** | **27k+ ⭐** | 420Hz spring physics constants (`stiffness: 420, damping: 30`), magnetic cursor pull (`useMotionValue`), and `layoutId` layout morphing. |
 | **[`3-emil-kowalski-vaul-sonner.md`](skills/taste-engine/references/3-emil-kowalski-vaul-sonner.md)** | **Vaul & Sonner** | **20k+ ⭐** | Bottom-sheet drawers, stacked physics toast queues, and tactile press-down states (`scale: 0.96`). |
-| **[`4-origin-ui.md`](skills/taste-engine/references/4-origin-ui.md)** | **Origin UI** | **5k+ ⭐** | Precision input adornments, shortcut search inputs, and sliding segmented pill controls. |
+| **[`4-origin-ui.md`](skills/taste-engine/references/4-origin-ui.md)** | **Origin UI** | **5k+ ⭐** | Precision input adornments, password visibility toggles, and sliding segmented pill controls. |
 | **[`5-cmdk-search.md`](skills/taste-engine/references/5-cmdk-search.md)** | **cmdk** | **12k+ ⭐** | Fast in-memory `⌘K` command palette traversal and instant keyboard filtering. |
 | **[`6-magic-ui-aceternity.md`](skills/taste-engine/references/6-magic-ui-aceternity.md)** | **Aceternity & Magic UI** | **40k+ ⭐** | Mouse-following radial spotlight cards, moving border beams, and infinite marquees. |
 | **[`7-lenis-smooth-scroll.md`](skills/taste-engine/references/7-lenis-smooth-scroll.md)** | **Lenis** | **13k+ ⭐** | Inertia momentum smooth scroll heuristics and high-performance passive rendering. |
@@ -106,33 +109,79 @@ Inside **`skills/taste-engine/references/`**, AI agents have instant access to 1
 
 ---
 
-## 📦 Complete Roster of 23 Standard Skills
+## 📦 Complete Roster of 50 Standard Skills
 
-| Skill ID | Category | Description & Capabilities |
-| :--- | :---: | :--- |
-| **`taste-engine`** 🪄 | **Design & UI** | Flagship anti-slop design engine combining 77k+ ⭐ dials and 10 UI framework playbooks. |
-| **`browser-automation-scraper`** 🕷️ | **Automation** | Autonomous headless Playwright & Puppeteer scraper for SPAs, competitor price tracking, and DOM extraction. |
-| **`owasp-security-sentinel`** 🛡️ | **Security & QA** | Automated scanner for leaked API secrets (`ghp_`, `sk_live_`), SQL injections, and broken object authorization. |
-| **`nextjs-app-router-guard`** ⚡ | **Fullstack** | React 19 Server Action validator, cache invalidation auditor, and waterfall bottleneck remover. |
-| **`database-migration-verifier`** 🗄️ | **DevOps & DB** | Zero-downtime expand-and-contract schema migration checker for PostgreSQL and SQLite. |
-| **`ui-ux-pro-max`** 🎨 | **Design & UI** | 8pt spatial grid, modular typographic scales (1.250 Major Third), and WCAG AAA contrast mathematics. |
-| **`code-review`** 🛡️ | **Engineering** | 4-phase structured code reviews across 20+ languages with 30+ dedicated reference guides. |
-| **`ast-token-optimizer`** 🧠 | **Memory & AST** | AST symbol tree queries reducing LLM token consumption by 97% vs raw file dumps. |
-| **`agent-memory-sync`** 🔄 | **Memory & AST** | Seamless cross-agent handoff contracts between Antigravity, Cursor, and Claude Code. |
-| **`enterprise-erp-sync`** 💼 | **Operations** | MYOB Cloud ERP REST API sync pipeline with automated OAuth2 token rotation. |
-| **`agency-messaging`** 📬 | **Agency** | Standard JSON-RPC inter-agent message queuing and inbox routing protocol. |
-| **`task-management`** 📋 | **Agency** | Autonomous task prioritization, queue assignment, and state machine transitions. |
-| **`agencycli-usage`** 💻 | **Agency** | Autonomous command invocation guidelines for multi-agent teams. |
-| **`clarify-confirm-continue`** 🤝 | **Productivity** | 3-phase alignment protocol to eliminate AI assumptions before modifying critical code. |
-| **`anti-slop-pr-audit`** 🧹 | **Review** | Static pull request auditor that catches generic AI code bloat and boilerplate. |
-| **`github-pr-triage`** 🏷️ | **Productivity** | Automated GitHub PR triage, semantic categorization, and changelog generation. |
-| **`pr-loop`** 🔁 | **Productivity** | Continuous automated PR refinement and test runner execution loop. |
-| **`deslop-duplication-audit`** ✂️ | **Review** | AST audit tool detecting duplicate utility functions across large codebases. |
-| **`distilling-strategies-interactively`** 💡 | **Productivity** | Interactive requirement clarification protocol for complex refactors. |
-| **`sidequest`** 🌿 | **Productivity** | Isolated branching for exploratory side features without polluting main branch. |
-| **`new-worktree`** 🌳 | **Productivity** | Git worktree isolation manager for concurrent parallel agent tasks. |
-| **`sem-semantic-diff`** 🔍 | **Review** | AST-aware semantic diff viewer for clean, distraction-free code reviews. |
-| **`quick-question`** ❓ | **Productivity** | Fast context lookup for lightweight inquiries without bloating agent history. |
+### 🎨 1. Design, UI & Vision (13 Skills)
+| Skill ID | Description |
+| :--- | :--- |
+| **`taste-engine`** | Flagship anti-slop design engine combining 77k+ ⭐ dials and 10 UI framework playbooks. |
+| **`ui-ux-pro-max`** | Agency-grade design intelligence database: 8pt spatial grid, 1.250 typography scale, and WCAG AAA math. |
+| **`gpt-taste`** | Strict GPT & Codex motion and layout override skill (forces asymmetric layouts and spring physics). |
+| **`full-output-enforcement`** | Anti-truncation skill guaranteeing complete, working code with zero placeholders (`// TODO`). |
+| **`stitch-design-taste`** | Multi-surface semantic design token and theme stitcher. |
+| **`brandkit`** | Comprehensive brand identity, color matrix, and typography token creator. |
+| **`imagegen-frontend-web`** | Web layout composition prompt generator for image models (ChatGPT Images, Midjourney). |
+| **`imagegen-frontend-mobile`** | Mobile UI composition prompt generator for iOS/Android screen generation. |
+| **`image-to-code`** | 3-phase autonomous vision pipeline converting UI screenshots and mockups into clean code. |
+| **`redesign-existing-projects`** | Safely refactor legacy/ugly codebases to Stripe/Tailwind UI without breaking backend props. |
+| **`minimalist-ui`** | Swiss precision & Dieter Rams minimalist design principles (*"Less, but better"*). |
+| **`industrial-brutalist-ui`** | Hardware engineering, tactile mechanical controls, and telemetry badges. |
+| **`high-end-visual-design`** | Stripe Press & Kinfolk luxury editorial aesthetics with warm palettes. |
+
+---
+
+### 🛍️ 2. E-Commerce, Auth, Fullstack & Cloud (16 Skills)
+| Skill ID | Description |
+| :--- | :--- |
+| **`shopify-storefront-architect`** | Shopify GraphQL Storefront API integration, optimistic cart lines, and checkout redirects. |
+| **`instant-product-search-filters`** | Sub-50ms product search with multi-faceted filtering, price sliders, and swatch facets. |
+| **`cart-checkout-orchestrator`** | Persistent cross-device shopping carts (Zustand), slide-over drawers, and Stripe checkout. |
+| **`better-auth-rbac`** | Modern type-safe authentication, Passkeys/WebAuthn, OAuth2, and multi-tenant organization RBAC. |
+| **`expo-react-native-architect`** | Universal iOS, Android & Web mobile applications with Expo Router v4 and native gestures. |
+| **`supabase-architect`** | PostgreSQL schemas, Row-Level Security (RLS) policies, and Auth triggers. |
+| **`stripe-billing-guard`** | Cryptographically verified Stripe webhook listeners and checkout sessions. |
+| **`seo-meta-optimizer`** | Dynamic OpenGraph images, sitemaps, robots.txt, and JSON-LD structured schema. |
+| **`tailwind-v4-migrator`** | Tailwind CSS v4 `@theme` directive block and container query architecture. |
+| **`mcp-server-builder`** | Model Context Protocol (MCP) server development in TypeScript and Python. |
+| **`docker-cloud-deployer`** | Multi-stage production Dockerfiles for Railway, Fly.io, Vercel, and Cloudflare. |
+| **`pdf-doc-intelligence`** | Document parsing, table extraction, and structured JSON isolation from complex PDFs. |
+| **`tanstack-query-sync`** | Server-state caching, stale-while-revalidate fetching, and optimistic UI mutations. |
+| **`zod-schema-sentinel`** | Runtime type safety, environment variable parsing, and API schema validation. |
+| **`owasp-security-sentinel`** | OWASP Top 10 vulnerability and secret leak auditor. |
+| **`nextjs-app-router-guard`** | React 19 Server Action validator and cache invalidation audit. |
+| **`database-migration-verifier`** | Zero-downtime schema migration checker for PostgreSQL and SQLite. |
+| **`enterprise-erp-sync`** | MYOB Cloud ERP REST API sync pipeline with automated OAuth2 token rotation. |
+
+---
+
+### 🧠 3. Memory & Architecture (3 Skills)
+| Skill ID | Description |
+| :--- | :--- |
+| **`ast-token-optimizer`** | AST symbol tree queries reducing LLM token consumption by 97% vs raw file dumps. |
+| **`agent-memory-sync`** | Seamless cross-agent handoff contracts between Antigravity, Cursor, and Claude Code. |
+| **`codebase-knowledge-graph`** | Semantic codebase dependency mapper and module interaction graphs. |
+| **`canvas-interactive-visualizer`** | Publication-ready Mermaid diagrams, system flowcharts, and sequence maps. |
+
+---
+
+### 🤖 4. Multi-Agent Orchestration & Review (17 Skills)
+| Skill ID | Description |
+| :--- | :--- |
+| **`code-review`** | 4-phase structured code reviews across 20+ languages with 30+ dedicated reference guides. |
+| **`browser-automation-scraper`** | Autonomous headless Playwright & Puppeteer scraper for SPAs and price tracking. |
+| **`agency-messaging`** | Standard JSON-RPC inter-agent message queuing and inbox routing protocol. |
+| **`task-management`** | Autonomous task prioritization, queue assignment, and state machine transitions. |
+| **`agencycli-usage`** | Autonomous command invocation guidelines for multi-agent teams. |
+| **`clarify-confirm-continue`** | 3-phase alignment protocol to eliminate AI assumptions before editing code. |
+| **`anti-slop-pr-audit`** | Static pull request auditor that catches generic AI code bloat. |
+| **`github-pr-triage`** | Automated GitHub PR triage, semantic categorization, and changelog generation. |
+| **`pr-loop`** | Continuous automated PR refinement and test runner execution loop. |
+| **`deslop-duplication-audit`** | AST audit tool detecting duplicate utility functions across large codebases. |
+| **`distilling-strategies-interactively`** | Interactive requirement clarification protocol for complex refactors. |
+| **`sidequest`** | Isolated branching for exploratory side features without polluting main branch. |
+| **`new-worktree`** | Git worktree isolation manager for concurrent parallel agent tasks. |
+| **`sem-semantic-diff`** | AST-aware semantic diff viewer for clean, distraction-free code reviews. |
+| **`quick-question`** | Fast context lookup for lightweight inquiries without bloating agent history. |
 
 ---
 
@@ -140,7 +189,7 @@ Inside **`skills/taste-engine/references/`**, AI agents have instant access to 1
 
 Copy and paste these prompts into **Antigravity**, **Cursor**, **Claude Code**, or **Windsurf**:
 
-### 🌟 1. Landing Page with Stripe Taste Standards
+### 🌟 1. Stripe-Style SaaS Landing Page
 ```markdown
 "Build a landing page for our developer API using the taste-engine skill.
 Dials:
@@ -156,40 +205,35 @@ Enforce:
 
 ---
 
-### 📊 2. High-Density Telemetry Dashboard
+### 🛍️ 2. Headless E-Commerce Store with Persistent Cart
 ```markdown
-"Build a server telemetry console using the taste-engine skill.
-Dials:
-- DESIGN_VARIANCE = 4
-- MOTION_INTENSITY = 5
-- VISUAL_DENSITY = 9
-
+"Scaffold a high-speed e-commerce storefront using shopify-storefront-architect and cart-checkout-orchestrator.
 Include:
-- ⌘K search command palette
-- Hardware-grade animated SVG circular progress gauges for CPU / Memory
-- Clean tabular view with monospace font and subtle 1px dividers"
+- Sub-50ms instant product search with price and category filters
+- Slide-over cart drawer with Zustand persistent storage and quantity steppers
+- Direct checkout redirect to Shopify Storefront API checkoutUrl"
 ```
 
 ---
 
-### 🕷️ 3. Autonomous Web Scraper Pipeline
+### 🔐 3. Modern Type-Safe Authentication with Passkeys & RBAC
 ```markdown
-"Extract the latest GPU pricing from the target e-commerce store using the browser-automation-scraper skill.
-Execute:
-- Launch headless Playwright with stealth user-agent headers
-- Wait for client-side hydration and extract product titles, prices, and stock status
-- Format output as clean JSON and export to SQLite"
+"Implement user authentication and organization multi-tenancy using better-auth-rbac.
+Configure:
+- Passkeys/WebAuthn and GitHub OAuth
+- PostgreSQL session store with connection pooling
+- Organization role-based access control (Admin, Member, Viewer)"
 ```
 
 ---
 
-### 🛡️ 4. OWASP Secret & Security Audit
+### 📱 4. Universal iOS & Android Mobile App
 ```markdown
-"Run a comprehensive security audit on this repository using the owasp-security-sentinel skill.
-Check for:
-- Leaked API keys (ghp_, sk_live_, AWS credentials)
-- SQL injection vulnerabilities in raw database queries
-- Broken access controls or unauthenticated public endpoints"
+"Build a mobile companion app for our SaaS using expo-react-native-architect.
+Implement:
+- Expo Router v4 file-based tabs navigation
+- Tactile haptic feedback on button clicks (expo-haptics)
+- Native-feeling spring bottom sheet modal"
 ```
 
 ---
@@ -212,7 +256,7 @@ Check for:
 
 ```
 vibe-skills/
-├── registry.json                            # Machine-readable skill catalog
+├── registry.json                            # Machine-readable skill catalog (50 skills)
 ├── package.json                             # 1-click CLI installer packaging
 ├── bin/
 │   └── vibe-skills.js                      # `npx vibe-skills add <skill>` CLI runner
@@ -230,17 +274,21 @@ vibe-skills/
     │       ├── 8-lucide-icons.md
     │       ├── 9-ui-ux-pro-max.md
     │       └── 10-21st-dev-and-cursorrules.md
-    ├── browser-automation-scraper/
+    ├── shopify-storefront-architect/
     │   └── SKILL.md
-    ├── owasp-security-sentinel/
+    ├── better-auth-rbac/
     │   └── SKILL.md
-    ├── nextjs-app-router-guard/
+    ├── expo-react-native-architect/
     │   └── SKILL.md
-    ├── database-migration-verifier/
+    ├── cart-checkout-orchestrator/
     │   └── SKILL.md
-    └── code-review/
-        ├── SKILL.md
-        └── reference/                       # 30+ deep language heuristics (Go, Rust, Python, etc.)
+    ├── instant-product-search-filters/
+    │   └── SKILL.md
+    ├── supabase-architect/
+    │   └── SKILL.md
+    ├── stripe-billing-guard/
+    │   └── SKILL.md
+    └── ... (50 Standard Skills Total)
 ```
 
 ---
@@ -249,7 +297,7 @@ vibe-skills/
 
 1. 🪄 **[`vibe-superkit`](https://github.com/shahrukh-hack/vibe-superkit):** Anti-AI Slop & Stripe/Tailwind UI Design Engine ([Live Demo](https://shahrukh-hack.github.io/vibe-superkit/))
 2. 🧠 **[`vibe-memory`](https://github.com/shahrukh-hack/vibe-memory):** Universal Long-Term Memory & Codebase AST Intelligence ([Live Demo](https://shahrukh-hack.github.io/vibe-memory/))
-3. ⚡ **[`vibe-skills`](https://github.com/shahrukh-hack/vibe-skills):** Mega-Library of 23 Standard Agent Skills with 1-Command CLI (`npx vibe-skills add <skill>`)
+3. ⚡ **[`vibe-skills`](https://github.com/shahrukh-hack/vibe-skills):** Mega-Library of 50 Standard Agent Skills with 1-Command CLI (`npx vibe-skills add <skill>`)
 4. 🤖 **[`vibe-agency`](https://github.com/shahrukh-hack/vibe-agency):** Autonomous Multi-Agent Team Orchestrator with 200+ Agents & Vibe Kanban ([Live Demo](https://shahrukh-hack.github.io/vibe-agency/))
 
 ---
