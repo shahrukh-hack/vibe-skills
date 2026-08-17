@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/badge/Version-v2.5.0-635BFF?style=flat-square)](package.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![Skills Standard](https://img.shields.io/badge/agentskills.io-Compliant-success?style=flat-square)](https://agentskills.io)
-[![Skills Count](https://img.shields.io/badge/Total%20Skills-40%20Standard%20Skills-purple?style=flat-square)](skills/)
+[![Skills Count](https://img.shields.io/badge/Total%20Skills-45%20Standard%20Skills-purple?style=flat-square)](skills/)
 [![Frameworks Bundled](https://img.shields.io/badge/UI%20Playbooks-10%20High--Star%20Frameworks-635BFF?style=flat-square)](skills/taste-engine/references/)
 
 <br />

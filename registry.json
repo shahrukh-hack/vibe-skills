@@ -1,7 +1,7 @@
 {
   "name": "@shahrukh-hack/vibe-skills",
   "version": "2.5.0",
-  "description": "Mega-Library of 40 Curated Standard Agent Skills & 10 UI Framework Playbooks compliant with agentskills.io",
+  "description": "Mega-Library of 45 Curated Standard Agent Skills & 10 UI Framework Playbooks compliant with agentskills.io",
   "author": "Yogeshkumar Patel",
   "homepage": "https://github.com/shahrukh-hack/vibe-skills",
   "skills": [
@@ -13,6 +13,11 @@
     { "id": "tailwind-v4-migrator", "category": "Design & UI", "description": "Tailwind CSS v4 @theme directive block and container query architecture." },
     { "id": "mcp-server-builder", "category": "Agent Infrastructure", "description": "Model Context Protocol (MCP) server development in TypeScript and Python." },
     { "id": "docker-cloud-deployer", "category": "DevOps & Cloud", "description": "Multi-stage production Dockerfiles for Railway, Fly.io, Vercel, and Cloudflare." },
+    { "id": "pdf-doc-intelligence", "category": "Data & Documents", "description": "Document parsing, table extraction, and structured JSON isolation from complex PDFs." },
+    { "id": "canvas-interactive-visualizer", "category": "Architecture & Visual", "description": "Publication-ready Mermaid diagrams, system flowcharts, and sequence maps." },
+    { "id": "codebase-knowledge-graph", "category": "Memory & Architecture", "description": "Semantic codebase dependency mapper and module interaction graphs." },
+    { "id": "tanstack-query-sync", "category": "Fullstack Engineering", "description": "Server-state caching, stale-while-revalidate fetching, and optimistic UI mutations." },
+    { "id": "zod-schema-sentinel", "category": "Engineering & Security", "description": "Runtime type safety, environment variable parsing, and API schema validation." },
     { "id": "gpt-taste", "category": "Design & UI", "description": "Strict GPT & Codex motion and layout override skill." },
     { "id": "full-output-enforcement", "category": "Engineering & DX", "description": "Anti-truncation skill guaranteeing complete, working code with zero placeholders." },
     { "id": "stitch-design-taste", "category": "Design & UI", "description": "Multi-surface semantic design token and theme stitcher." },
