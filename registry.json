@@ -1,11 +1,16 @@
 {
   "name": "@shahrukh-hack/vibe-skills",
   "version": "2.5.0",
-  "description": "Mega-Library of 28 Curated Standard Agent Skills & 10 UI Framework Playbooks compliant with agentskills.io",
+  "description": "Mega-Library of 33 Curated Standard Agent Skills & 10 UI Framework Playbooks compliant with agentskills.io",
   "author": "Yogeshkumar Patel",
   "homepage": "https://github.com/shahrukh-hack/vibe-skills",
   "skills": [
     { "id": "taste-engine", "category": "Design & UI", "description": "Flagship Anti-AI Slop design engine combining 77k+ ⭐ dials and 10 UI framework playbooks." },
+    { "id": "gpt-taste", "category": "Design & UI", "description": "Strict GPT & Codex motion and layout override skill." },
+    { "id": "full-output-enforcement", "category": "Engineering & DX", "description": "Anti-truncation skill guaranteeing complete, working code with zero placeholders." },
+    { "id": "stitch-design-taste", "category": "Design & UI", "description": "Multi-surface semantic design token and theme stitcher." },
+    { "id": "brandkit", "category": "Design & Branding", "description": "Comprehensive brand identity, color matrix, and typography token creator." },
+    { "id": "imagegen-frontend-web", "category": "Design & Vision", "description": "Composition prompt generator for web UI image models." },
     { "id": "image-to-code", "category": "Design & Vision", "description": "Autonomous vision pipeline converting UI screenshots and mockups into clean code." },
     { "id": "redesign-existing-projects", "category": "Design & Refactoring", "description": "Safely refactor legacy or ugly codebases to Stripe/Tailwind UI without breaking backend props." },
     { "id": "minimalist-ui", "category": "Design & UI", "description": "Swiss precision & Dieter Rams minimalist design principles." },
